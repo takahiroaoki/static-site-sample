@@ -1,11 +1,11 @@
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ..:/workspaces/static-site-sample
-    working_dir: /workspaces/static-site-sample
-    ports:
-      - 8080:8080
-    tty: true
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ..:/workspaces/static-site-sample
+        working_dir: /workspaces/static-site-sample
+        ports:
+            - 8080:8080
+        tty: true
