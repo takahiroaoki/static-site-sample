@@ -1,5 +1,3 @@
-import './index.scss';
-
 const index = async () => {
     window.alert('sample2');
 };
