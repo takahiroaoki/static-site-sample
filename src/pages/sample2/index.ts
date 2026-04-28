@@ -1,7 +1,7 @@
 import './index.scss';
 
 const index = async () => {
-    window.alert('sample1');
+    window.alert('sample2');
 };
 
 document.addEventListener('DOMContentLoaded', index);
