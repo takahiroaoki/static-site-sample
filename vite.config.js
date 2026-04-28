@@ -14,7 +14,14 @@ export default defineConfig({
         outDir: outDir,
         emptyOutDir: true,
     },
-    plugins: [vituum(), pug()],
+    plugins: [
+        vituum(),
+        pug({
+            options: {
+                basedir: srcDir,
+            },
+        }),
+    ],
     resolve: {
         alias: {
             '@src': srcDir,

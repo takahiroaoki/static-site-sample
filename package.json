@@ -5,6 +5,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "dev": "vite --host --port 8080",
         "build": "vite build",
         "lint": "eslint .",
         "format": "prettier --write ."
