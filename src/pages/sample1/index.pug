@@ -1,10 +1,12 @@
 extends /src/layout/index.pug
+include /src/components/input/input.pug
 
 block head
     link(rel='stylesheet', href='/src/pages/sample1/index.scss')
 
 block content
   h1 sample1
+  +input('input1-ref', 'input1')(placeholder='Enter text here')
 
 block script
   script(type='module' src='/src/pages/sample1/index.ts')

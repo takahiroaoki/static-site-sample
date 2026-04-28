@@ -1,0 +1,6 @@
+mixin input(ref, id)
+    // -
+        attributes:
+            placeholder: input placeholder, default 'placeholder'
+    - var { placeholder = 'placeholder' } = {...attributes}
+    input.input(data-ref=ref id=id type="text" placeholder=placeholder)
