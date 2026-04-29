@@ -1,0 +1,18 @@
+@use '@src/styles/variables' as vars;
+
+.input {
+    display: flex;
+    flex-direction: column;
+
+    &__title, &__field {
+        font-size: vars.$font-size__content;
+        line-height: vars.$line-height;
+    }
+
+    &__message {
+        color: vars.$color__error-message;
+        font-size: vars.$font-size__note;
+        line-height: vars.$line-height;
+        height: vars.$line-height;
+    }
+}

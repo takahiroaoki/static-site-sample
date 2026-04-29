@@ -1,0 +1,11 @@
+mixin input(ref, title)
+    //-
+        attributes:
+            id: input id, default ref
+            type: input type, default 'text'
+            placeholder: input placeholder, default 'placeholder'
+    - const { id = ref, placeholder = 'placeholder', type = 'text' } = {...attributes}
+    .input(data-ref=ref)
+        label.input__title(for=id) #{title}
+        input.input__field(id=id type=type placeholder=placeholder)
+        span.input__message
