@@ -16,7 +16,7 @@ export class Input extends BaseComponent<InputState> {
     protected getEventSettings() {
         return [
             {
-                selector: '.input__content',
+                selector: '.input__field',
                 eventName: 'input',
                 callback: () => {
                     this.setState({
@@ -29,7 +29,7 @@ export class Input extends BaseComponent<InputState> {
     }
 
     private getInputValue(): string {
-        const inputElem = this.select('.input__content') as HTMLInputElement;
+        const inputElem = this.select('.input__field') as HTMLInputElement;
         return inputElem.value;
     }
 
