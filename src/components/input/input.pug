@@ -4,4 +4,6 @@ mixin input(ref, id)
             type: input type, default 'text'
             placeholder: input placeholder, default 'placeholder'
     - var { placeholder = 'placeholder', type = 'text' } = {...attributes}
-    input.input(data-ref=ref id=id type=type placeholder=placeholder)
+    .input(data-ref=ref)
+        input.input__content(id=id type=type placeholder=placeholder)
+        span.input__message
