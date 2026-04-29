@@ -1,6 +1,7 @@
 mixin input(ref, id)
-    // -
+    //-
         attributes:
+            type: input type, default 'text'
             placeholder: input placeholder, default 'placeholder'
-    - var { placeholder = 'placeholder' } = {...attributes}
-    input.input(data-ref=ref id=id type="text" placeholder=placeholder)
+    - var { placeholder = 'placeholder', type = 'text' } = {...attributes}
+    input.input(data-ref=ref id=id type=type placeholder=placeholder)
